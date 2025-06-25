@@ -19,7 +19,7 @@ const workshops_content = [
         title: 'AI in Education Workshop #2',
         description: 'Through experiential learning, gain first-hand experience using generative AI to support content creation, research organization, and classroom applications.',
         image: 'src/assets/workshop3.png',
-        link: '/src/assets/AI Innovation Workshop Series2.pdf'
+        link: 'src/assets/AI Innovation Workshop Series2.pdf'
     },
     {
         title: 'Culturally Responsive Considerations with Artificial Intelligence',
