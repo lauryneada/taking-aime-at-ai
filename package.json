@@ -19,7 +19,6 @@
     "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-material-ui-carousel": "^3.4.2",
     "react-router": "^7.6.1",
     "react-router-dom": "^7.6.1",
     "styled-components": "^6.1.18"
