@@ -2,7 +2,7 @@
   "name": "taking-aime-at-ai",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://lauryneada.github.io/taking-aime-at-ai/",
+  "homepage": "https://lauryneada.github.io/taking-aime-at-ai/#",
   "type": "module",
   "scripts": {
     "dev": "vite",
