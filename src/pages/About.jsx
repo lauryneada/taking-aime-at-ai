@@ -53,7 +53,7 @@ function About() {
                     >
                         {!hovered ? (
                             <img
-                                src="src/assets/dr-julie-mueller.png"
+                                src="images/dr-julie-mueller.png"
                                 alt="Dr. Julie Mueller"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             />
@@ -93,7 +93,7 @@ function About() {
                     >
                         {!hovered1 ? (
                             <img
-                                src="src/assets/dr-keri-ewart.png"
+                                src="images/dr-keri-ewart.png"
                                 alt="Dr. Keri Ewart"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             />

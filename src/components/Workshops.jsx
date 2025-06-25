@@ -6,26 +6,26 @@ const workshops_content = [
     {
         title: 'AI in Education: Where are we and where do we need to go? ',
         description: 'Explore prompt engineering, culturally responsive practices, and practical classroom applications of generative AI tools.',
-        image: 'src/assets/workshop1.png',
-        link: 'src/assets/AI in Education.pdf'
+        image: 'images/workshop1.png',
+        link: 'images/AI in Education.pdf'
     },
     {
         title: 'The AI Revolution in Education for Teacher Candidates',
         description: 'Learn prompt engineering, discover AI’s challenges and opportunities, and gain practical skills for the classroom.',
-        image: 'src/assets/workshop2.png',
-        link: 'src/assets/AI Innovation Workshop Series1.pdf'
+        image: 'images/workshop2.png',
+        link: 'images/AI Innovation Workshop Series1.pdf'
     },
     {
         title: 'AI in Education Workshop #2',
         description: 'Through experiential learning, gain first-hand experience using generative AI to support content creation, research organization, and classroom applications.',
-        image: 'src/assets/workshop3.png',
-        link: 'src/assets/AI Innovation Workshop Series2.pdf'
+        image: 'images/workshop3.png',
+        link: 'images/AI Innovation Workshop Series2.pdf'
     },
     {
         title: 'Culturally Responsive Considerations with Artificial Intelligence',
         description: 'A practical guide to develop the skill of crafting clear and effective prompts to effectively communicate with AI tools to achieve specific outcomes.',
-        image: 'src/assets/workshop4.png',
-        link: 'src/assets/Engineering Prompting.pdf'
+        image: 'images/workshop4.png',
+        link: 'images/Engineering Prompting.pdf'
     }
 ];
 

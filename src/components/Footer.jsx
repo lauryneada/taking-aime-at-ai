@@ -8,7 +8,7 @@ function Footer() {
         <Container maxWidth={false} disableGutters sx={{backgroundColor: '#A088BF', padding: 3, width:'100vw'}}>
             <Stack direction={'row'}>
                 <Stack sx={{display:'flex', alignItems:'start', width:'325.72px'}}>
-                    <img className='logo' src='src/assets/laurier_logo.png'></img>
+                    <img className='logo' src='images/laurier_logo.png'></img>
                 </Stack>
                 
                 <Stack spacing={1} sx={{display:'flex', alignItems:'center', justifyContent: 'center', flexGrow: 2}}>

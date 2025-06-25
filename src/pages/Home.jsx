@@ -71,7 +71,7 @@ export default function Home() {
         <Container maxWidth='xl' sx={{ display: 'flex', flexDirection:'column', alignItems: 'center', justifyContent: 'center', padding: 10}}>
             <Typography variant='h2'>The AIME Framework</Typography>
             <Typography variant='body1' sx={{textAlign: 'center', paddingRight: 6, paddingLeft: 6}}>A complete and actionable path for equity-driven, interdisciplinary, and assessment-literate AI integration within teacher education.</Typography>
-            <Box sx={{padding:3, display: 'flex', alignItems: 'center'}}><img className='aime-visual' src='src/assets/AIME_visual.png'/></Box>
+            <Box sx={{padding:3, display: 'flex', alignItems: 'center'}}><img className='aime-visual' src='images/AIME_visual.png'/></Box>
             <Button 
                 variant='contained' 
                 size='large' 
@@ -96,12 +96,12 @@ export default function Home() {
             <Stack direction='row' spacing={20} sx={{margin:4}}>
                 <Box size='md'>
                     <IconButton onClick={handleWorkshopClick}>
-                        <img className="imgButton" src="src/assets/workshops.png"></img>
+                        <img className="imgButton" src="images/workshops.png"></img>
                     </IconButton>
                 </Box>
                 <Box size='md'>
                     <IconButton onClick={handleToolsClick}>
-                        <img className="imgButton" src="src/assets/tools.png"></img>
+                        <img className="imgButton" src="images/tools.png"></img>
                     </IconButton>
                 </Box>
             </Stack>
@@ -117,7 +117,7 @@ export default function Home() {
             <Typography variant='h2'>Impact</Typography>
             <Stack direction='row' sx={{margin: 0}}>
                 <Box sx={{position: 'relative', left: '-100px'}}>
-                    <img className="impact-pic" src="src/assets/impact_picture.jpg"></img>
+                    <img className="impact-pic" src="images/impact_picture.jpg"></img>
                 </Box>
                 <Stack spacing={8} >
                     <Box sx={{ background: 'linear-gradient(60deg, #9c5ac8, #ffe2ea)', position:'relative', right: '-150px', padding: 2, borderRadius: '20px', width:'900px'}}>
