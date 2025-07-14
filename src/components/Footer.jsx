@@ -61,17 +61,9 @@ function Footer() {
                     </Stack>
                     <Stack spacing={1} sx={{ width: '270px', display: 'flex', justifyContent: 'center', alignItems: 'end' }}>
                         <Typography sx={{ textDecoration: 'none', color: 'white', fontSize: 20 }}>CONTACT US</Typography>
-                        <Stack direction={'row'} spacing={1}>
-                            <Typography sx={{ color: 'white', fontSize: 16 }}>Dr. Ewart -</Typography>
-                            <Typography className='mail' component='a' href='mailto: kewart@wlu.ca' sx={{ color: 'white', fontSize: 16 }}>kewart@wlu.ca</Typography>
-                        </Stack>
-                        <Stack direction={'row'} spacing={1}>
-                            <Typography sx={{ color: 'white', fontSize: 16 }}>Dr. Mueller -</Typography>
-                            <Typography className='mail' component='a' href='mailto: jmueller@wlu.ca' sx={{ color: 'white', fontSize: 16 }}>jmueller@wlu.ca</Typography>
-                        </Stack>
-                        <Stack direction={'row'} spacing={1}>
-                            <Typography sx={{ color: 'purple.light', fontSize: 14, fontStyle: 'italic' }}>Website Design by Lauryne Assa</Typography>
-                        </Stack>
+                        <Typography sx={{ color: 'white', fontSize: 16 }}>Dr. Ewart - <Link href='mailto: kewart@wlu.ca' sx={{ color: 'white', fontSize: 16 }}>kewart@wlu.ca</Link></Typography>
+                        <Typography sx={{ color: 'white', fontSize: 16 }}>Dr. Mueller - <Link href='mailto: jmueller@wlu.ca' sx={{ color: 'white', fontSize: 16 }}>jmueller@wlu.ca</Link></Typography>
+                        <Typography sx={{ color: 'purple.light', fontSize: 14, fontStyle: 'italic' }}>Website Design by Lauryne Assa</Typography>
                     </Stack>
                 </Stack>
             )}
