@@ -3,8 +3,10 @@ import { styled } from '@mui/material/styles';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import Workshops from './Workshops';
+import Presentations from './Presentations';
+import Publications from './Publications';
 import Recommendations from './Recommendations';
+import CustomTools from './CustomTools';
 import VideoTutorials from './VideoTutorials';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -24,9 +26,9 @@ const AntTab = styled((props) => <Tab disableRipple {...props} />)(({ theme }) =
   },
   marginRight: theme.spacing(1),
   fontSize: 25,
-  color: '#41127C',
+  color: '#412C88',
   '&:hover': {
-    color: '#41127C',
+    color: '#412C88',
     opacity: 1,
   },
   '&.Mui-selected': {
@@ -57,22 +59,30 @@ export default function ResourceTabs() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ bgcolor: '#fff' }}>
         <AntTabs value={value} onChange={handleChange} centered>
-          <AntTab label="Workshops" />
+          <AntTab label="Presentations" />
+          <AntTab label="Publications" />
+          <AntTab label="Customized AI Tools" />
           <AntTab label="Recommended AI Tools" />
-          <AntTab label="Video Tutorials" />
+          <AntTab label="AI Tips in Two" />
         </AntTabs>
         <Box sx={{ p: 3 }} />
       </Box>
     </Box>
     <Box sx={{ p: 3 }}>
         {value === 0 && (
-            <Workshops />
+            <Presentations />
         )}
         {value === 1 && (
-            <Recommendations />
+            <Publications />
         )}
         {value === 2 && (
-            <VideoTutorials />
+            <CustomTools />
+        )}
+        {value === 3 && (
+            <Recommendations />
+        )}
+        {value === 4 && (
+            <VideoTutorials/>
         )}
     </Box>
     </>

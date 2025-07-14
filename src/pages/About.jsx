@@ -13,6 +13,25 @@ function About() {
         }, 200)
     };
 
+    const handleIgniteClick = () => {
+        setTimeout(() => {
+            window.open('https://www.wevideo.com/view/3798105556', '_blank');
+        }, 200)
+    };
+
+    const handlePDFClick = () => {
+        setTimeout(() => {
+            window.open('http://c21canada.org/wp-content/uploads/2025/05/ON-WLU-PDF-AIUseCase-2025.pdf', '_blank');
+        }, 200)
+    };
+
+    const handlePodcastClick = () => {
+        setTimeout(() => {
+            window.open('http://c21canada.org/wp-content/uploads/2025/06/ON-WLU-Podcast-AIUseCase-2025.mp4', '_blank');
+        }, 200)
+    };
+
+
     return (
         <>
         <Container maxWidth='lg' sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 20, gap: 3, textAlign: 'center', paddingBottom: 10}}>
@@ -25,14 +44,41 @@ function About() {
             <Typography variant='h2' color='#9c5ac8'>Laurier’s AI Use Case</Typography>
             <Typography variant='body1' color='#9c5ac8'>We joined Canada 21 and Dell to explore this question through a national Use Case initiative.​</Typography>
             <Typography variant='body1' color='#9c5ac8'>At the heart of Laurier’s AI Use Case is a commitment to embedding AI literacy and ethical practice into teacher education in a way that aligns with the Faculty of Education’s values: <b>social justice</b>, <b>inclusion</b>, <b>critical inquiry</b>, <b>community partnership</b>, <br /> and <b>pedagogical integrity</b>. </Typography>
-            <Button 
-                variant='contained' 
-                size='large' 
-                onClick={handleExploreClick}
-                sx={{backgroundColor: '#9c5ac8', borderRadius: 30, minWidth: 155, minHeight: 55, fontWeight: 900, fontSize: 18, margin: 3}}
-            >
-                Explore Other Use Cases
-            </Button>
+            <Stack direction='row' spacing={2} sx={{justifyContent: 'center', padding: 3}}>
+                <Button 
+                    variant='contained' 
+                    size='large' 
+                    onClick={handleIgniteClick}
+                    sx={{backgroundColor: 'purple.bright', borderRadius: 30, minWidth: 155, minHeight: 55, fontWeight: 900, fontSize: 18}}
+                >
+                    Ignite Presentation
+                </Button>
+                <Button 
+                    variant='contained' 
+                    size='large' 
+                    onClick={handlePDFClick}
+                    sx={{backgroundColor: 'purple.bright', borderRadius: 30, minWidth: 155, minHeight: 55, fontWeight: 900, fontSize: 18}}
+                >
+                    PDF
+                </Button>
+                <Button 
+                    variant='contained' 
+                    size='large' 
+                    onClick={handlePodcastClick}
+                    sx={{backgroundColor: 'purple.bright', borderRadius: 30, minWidth: 155, minHeight: 55, fontWeight: 900, fontSize: 18}}
+                >
+                    Podcast
+                </Button>
+                <Button 
+                    variant='contained' 
+                    size='large' 
+                    onClick={handleExploreClick}
+                    sx={{backgroundColor: 'purple.light', borderRadius: 30, minWidth: 155, minHeight: 55, fontWeight: 900, fontSize: 18}}
+                >
+                    Explore Other Use Cases
+                </Button>
+            </Stack>
+            
         </Container>
         <Container maxWidth='xl' sx={{padding: 20, textAlign: 'center'}}>
             <Typography variant='h2'>The Team</Typography>
@@ -62,7 +108,7 @@ function About() {
                                 sx={{
                                     width: '100%',
                                     height: '100%',
-                                    background: '#41127C',
+                                    background: '#412C88',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
@@ -75,7 +121,7 @@ function About() {
                             </Box>
                         )}
                     </Box>
-                    <Typography variant='subtitle1' sx={{padding: 2, color: '#41127C' }}>Dr. Julie Mueller</Typography>
+                    <Typography variant='subtitle1' sx={{padding: 2, color: '#412C88' }}>Dr. Julie Mueller</Typography>
                 </Box>
                 <Box>
                     <Box
@@ -102,7 +148,7 @@ function About() {
                                 sx={{
                                     width: '100%',
                                     height: '100%',
-                                    background: '#41127C',
+                                    background: '#412C88',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
@@ -115,7 +161,7 @@ function About() {
                             </Box>
                         )}
                     </Box>
-                    <Typography variant='subtitle1' sx={{padding: 1, color: '#41127C'}}>Dr. Keri Ewart</Typography>
+                    <Typography variant='subtitle1' sx={{padding: 2, color: '#412C88'}}>Dr. Keri Ewart</Typography>
                 </Box>
             </Stack>
         </Container>

@@ -29,7 +29,7 @@ const workshops_content = [
     }
 ];
 
-function Workshops() {
+function Presentations() {
     return (
         <Container maxWidth='xl' sx={{paddingBottom: 6}}>
             <Grid container spacing={4} sx={{ justifyContent: 'center'}}>
@@ -43,4 +43,4 @@ function Workshops() {
     )
 }
 
-export default Workshops;
+export default Presentations;

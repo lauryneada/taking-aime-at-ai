@@ -14,16 +14,16 @@ export default function Home() {
     };
 
     const handleWorkshopClick = () => {
-        navigate('/resource-center?tab=0')
+        navigate('/resource-centre?tab=0')
     };
 
     const handleToolsClick = () => {
-        navigate('/resource-center?tab=1')
+        navigate('/resource-centre?tab=1')
     };
     return (
         <>
         <Container maxWidth={false} disableGutters sx={{
-            backgroundColor: '#41127C',
+            backgroundColor: 'purple.main',
             minHeight: '690px',
             width: '100vw',
             display: 'flex',
@@ -50,7 +50,7 @@ export default function Home() {
                         left: '50%',
                         bottom: 0,
                         transform: 'translate(-50%, 50%)',
-                        bgcolor: '#41127C',
+                        bgcolor: 'purple.main',
                         px: 4,
                         py: 2,
                         zIndex: 2,
@@ -76,13 +76,13 @@ export default function Home() {
                 variant='contained' 
                 size='large' 
                 onClick={handleLearnMoreClick}
-                sx={{backgroundColor: '#41127C', borderRadius: 30, minWidth: 155, minHeight: 55, fontWeight: 900, fontSize: 18}}
+                sx={{backgroundColor: 'purple.main', borderRadius: 30, minWidth: 155, minHeight: 55, fontWeight: 900, fontSize: 18}}
             >
                 Learn More
             </Button>
         </Container>
         <Container maxWidth={false} disableGutters sx={{
-            backgroundColor: '#A088BF', 
+            backgroundColor: 'purple.light', 
             minHeight: '690px',
             width: '100vw',
             display: 'flex', 
@@ -124,7 +124,7 @@ export default function Home() {
                         <Box sx={{display: 'flex', alignItems: 'flex-start', gap: 2}}>
                             <Typography variant='h4' sx={{alignSelf: 'center'}}>8+</Typography>
                             <Box sx={{display: 'flex', alignItems: 'flex-start', flexDirection: 'column', paddingRight: 20, gap: 1}}>
-                                <Typography variant='h3' sx={{fontWeight: 900, color: '#41127C'}}>AI faculty workshops</Typography>
+                                <Typography variant='h3' sx={{fontWeight: 900, color: 'purple.main'}}>AI faculty workshops</Typography>
                                 <Typography variant='body1'>
                                     introducing foundational AI concepts, raising critical questions around educational ethics and equity, and encouraging open dialogue among faculty
                                 </Typography>

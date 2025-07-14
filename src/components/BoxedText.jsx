@@ -27,7 +27,7 @@ function BoxedText(props) {
                 <Typography
                     variant='body1'
                     fontSize='35px'
-                    sx={{ color: open ? 'white' : '#41127C' }}
+                    sx={{ color: open ? 'white' : 'purple.main' }}
                 >
                     {props.title || props.text}
                 </Typography>

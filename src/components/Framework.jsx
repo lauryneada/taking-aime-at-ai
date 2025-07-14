@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const frameworkData = [
     {
-        label: "Adaptive and Differentiated Learning",
+        label: "Adaptive & Personalized Learning",
         color: "#DB6463",
         desc: "Centers UDL, accessibility, and learner-driven AI tools to support differentiated instruction and feedback.",
         link: "/a"
@@ -16,17 +16,17 @@ const frameworkData = [
         link: "/i"
     },
     {
-        label: "Multiple Critical AI Literacies",
+        label: "Experiential, Ethical, & Evolving AI Practices",
+        color: "#FF9900",
+        desc: "Supports hands-on learning, ethical reasoning, and iterative professional growth.",
+        link: "/e"
+    },
+    {
+        label: "Multiple & Critical AI Literacies",
         color: "#6dd040",
         desc: "Prepares teacher candidates to critically understand, teach, and evaluate AI in educational settings.",
         link: "/m"
     },
-    {
-        label: "Experimental, Ethical, Evolving AI Practices",
-        color: "#FF9900",
-        desc: "Supports hands-on learning, ethical reasoning, and iterative professional growth.",
-        link: "/e"
-    }
 ];
 
 const learnerDrivenData = "Represents the foundational focus on equity, accessibility, and ethical AI use that is driven by the needs of the learner rather than the functions of any specific technology."; 

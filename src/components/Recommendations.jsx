@@ -12,11 +12,11 @@ const recommendations = [
     {
         title: 'NotebookLM',
         description: 'Notes, presentations, and research to podcasts',
-        color: '#41127C',
+        color: '#412C88',
         link: 'https://notebooklm.google'
     },
     {
-        title: 'gradescope',
+        title: 'Gradescope',
         description: 'Streamline the assessment process with differentiated feedback',
         color: '#9c5ac8',
         link: 'https://gradescope.com'
@@ -24,7 +24,7 @@ const recommendations = [
     {
         title: 'Quizziz',
         description: 'Interactice quix platform that enables gamified learning',
-        color: '#41127C',
+        color: '#412C88',
         link: 'https://quizizz.com'
     },
     {
@@ -34,9 +34,9 @@ const recommendations = [
         link: 'https://gmind.ai'
     },
     {
-        title: 'twee',
+        title: 'Twee',
         description: 'Generate lesson plans, provide feedback and support diverse assessments.',
-        color: '#41127C',
+        color: '#412C88',
         link: 'https://twee.com'
     },
     {

@@ -7,7 +7,7 @@ import ResourceTabs from "../components/ResourceTabs";
 export default function Resources() {
     return (
         <>
-        <Typography variant='h2' sx={{padding: 2, textAlign: 'center'}}>Resource Center</Typography>
+        <Typography variant='h2' sx={{padding: 2, textAlign: 'center'}}>Resource Centre</Typography>
         <ResourceTabs />
         </>
         

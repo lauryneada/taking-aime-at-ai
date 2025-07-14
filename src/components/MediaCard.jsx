@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function MediaCard(props) {
   return (
-    <Card sx={{ maxWidth: 400 , border: '2px solid #41127C', borderRadius: '20px', height: '550px'}}>
+    <Card sx={{ maxWidth: 400 , border: '2px solid', borderColor: 'purple.main', borderRadius: '20px', height: '550px'}}>
       <CardMedia
         sx={{ height: 200 }}
         image={props.image}

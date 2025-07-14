@@ -7,12 +7,22 @@ import BoxedText from "../components/BoxedText";
 export default function Aime() {
     return (
         <>
-        <Stack direction='row' sx={{padding: 15}}>
+        <Stack direction='row' sx={{padding: 10}}>
             <Container maxWidth='lg' sx={{display: 'flex', flexDirection: 'column',justifyContent: 'start', gap: 3}}>
-                <Typography variant='h2' fontSize={75} color='#41127C' margin={0}><span style={{color: ' #DB6463'}}>A</span>I-Driven</Typography>
-                <Typography variant='h2' fontSize={75} color='#41127C' margin={0}><span style={{color: '#4284F3'}}>I</span>nclusive</Typography>
-                <Typography variant='h2' fontSize={75} color='#41127C' margin={0}><span style={{color: '#6dd040'}}>M</span>ultiliteracies</Typography>
-                <Typography variant='h2' fontSize={75} color='#41127C' margin={0}><span style={{color: '#FF9900'}}>E</span>ducation Framework</Typography>
+                <Stack direction="row" alignItems="flex-start" spacing={2}>
+                    <Stack spacing={0.5} alignItems="center" justifyContent="center">
+                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0} sx={{minWidth: '1.2em', textAlign: 'center'}}><span style={{color: ' #DB6463'}}>A</span></Typography>
+                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0} sx={{minWidth: '1.2em', textAlign: 'center'}}><span style={{color: '#4284F3'}}>I</span></Typography>
+                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0} sx={{minWidth: '1.2em', textAlign: 'center'}}><span style={{color: '#6dd040'}}>M</span></Typography>
+                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0} sx={{minWidth: '1.2em', textAlign: 'center'}}><span style={{color: '#FF9900'}}>E</span></Typography>
+                    </Stack>
+                    <Stack spacing={0.5}>
+                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0}>daptive</Typography>
+                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0}>nclusive</Typography>
+                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0}>ulti-literacy</Typography>
+                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0}>thical learner-driven AI in teacher education</Typography>
+                    </Stack>
+                </Stack>
             </Container>
             <KeyboardDoubleArrowDownIcon sx={{fontSize: '300px', position: 'relative', left: 50, top: 170}}/>
         </Stack>
@@ -26,7 +36,7 @@ export default function Aime() {
             <BoxedText 
                 text={[<span style={{fontWeight: 700}}>Phase 1</span>, " Awareness and Professional Learning"]}
                 hover={true}
-                link='/resource-center'
+                link='/resource-centre'
                 more={[
                     'Develop foundational workshops, training modules, and interdisciplinary AI literacy courses tailored for BEd students and faculty.',
                     'Offer professional development sessions on AI’s role in education, ethics, and equity.',
@@ -58,6 +68,5 @@ export default function Aime() {
             />
         </Container>
         </>
-        
     );
 }

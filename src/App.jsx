@@ -25,7 +25,7 @@ const theme = createTheme({
     h2:{
       fontFamily:'Metropolis',
       fontWeight: 900,
-      color: '#41127C',
+      color: '#412C88',
       margin: 20,
     },
     h3: {
@@ -35,7 +35,7 @@ const theme = createTheme({
     },
     body1: {
       fontSize: 25,
-      color: '#41127C',
+      color: '#412C88',
     },
     button: {
       textTransform: 'none',
@@ -68,6 +68,11 @@ const theme = createTheme({
     primary: {
       main: '#A088BF',
     },
+    purple: {
+      main: '#412C88', 
+      light: '#A088BF',
+      bright: '#9c5ac8',
+    }
   },
 });
 
@@ -80,7 +85,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aime" element={<Aime />} />
-          <Route path="/resource-center" element={<Resources />} />
+          <Route path="/resource-centre" element={<Resources />} />
           <Route path="/about" element={<About />} />
           <Route path="/a" element={<A />} />
           <Route path="/i" element={<I />} />
