@@ -2,22 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Typography, Paper, IconButton, Box } from '@mui/material';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import items from '../consts/testimonialsData';
 
 function Testimonials() {
-    const items = [
-        { 
-            desc: "It is essential that we provide our pre-service teachers with the tools they need to both use AI and help develop the AI related habits of mind of their future students. As a framework, I believe that we have a responsibility to teacher candidates and their future students to provide them with the tools they need to navigate the ever-changing landscape of education." ,
-            name: "Dr. Jennifer Straub, Associate Dean, Bachelor of Education Wilfrid Laurier University",
-        },
-        { 
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." ,
-            name: "Another participant",
-        },
-        { 
-            desc: "Another testimonial goes here!",
-            name: "Participant at AI Literacy Session",
-        },
-    ];
 
     const [index, setIndex] = useState(0);
 
@@ -43,8 +30,8 @@ function Testimonials() {
             </IconButton>
             <Box 
                 sx={{ 
-                    width: '900px', 
-                    height: '250px' ,
+                    width: '1000px', 
+                    height: '275px' ,
                     padding: 5, 
                     border: '4px solid #412C88', 
                     borderRadius: '20px', 
@@ -55,8 +42,9 @@ function Testimonials() {
                     justifyContent: 'center'
                 }}
             >
-                <Typography variant='body1' sx={{fontSize: 18, textAlign: 'center'}}>{items[index].desc}</Typography>
-                <Typography variant='body1' sx={{fontSize: 16, textAlign: 'center'}}>-{items[index].name}</Typography>
+                <Typography variant='body1' sx={{fontSize: 18, textAlign: 'center'}}>"{items[index].desc}"</Typography>
+                {items[index].name ?
+                 <Typography variant='body1' sx={{fontSize: 16, textAlign: 'center'}}>-{items[index].name}</Typography> : null}
             </Box>
             <IconButton onClick={handleNext} sx={{paddingLeft: 2}}>
                 <ArrowForwardIosIcon fontSize='large' sx={{color: 'purple.main'}}/>
