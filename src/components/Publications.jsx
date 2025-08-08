@@ -3,14 +3,16 @@ import { Box, Typography, Divider, Container, Link } from '@mui/material';
 
 const publications = [
   {
-    name: 'Chapters in Books',
-    description: 'Brassard, L., Mueller, J., Archer, K., & Spencer-Mueller, K. E. (2020). Learning to teach global competencies in a transforming digital world: A national examination and case study. In Dhir, H (Eds). Handbook of Research on Barriers for Teaching 21st-century Competencies and the Impact of Digitalization. IGI Global. DOI: ',
-    reference: '10.4018/978-1-7998-6967-2.ch003',
-    href: 'https://www.igi-global.com/gateway/chapter/280714'
+    name: 'From Macro to Culturally Responsive and Sustaining Contextualized Micro-Prompts: Guiding Teacher Candidates Through an AI Prompting Continuum',
+    description: 'Ewart, K. (2025). From macro to culturally responsive and sustaining contextualized micro-prompts: Guiding teacher candidates through an AI prompting continuum. In Proceedings of SITE 2025 - Society for Information Technology & Teacher Education International Conference (pp. 494–501). Association for the Advancement of Computing in Education (AACE). ',
+    reference: 'Read Publication',
+    href: 'images/225978.pdf'
   },
   {
-    name: 'Conference Presentations',
-    description: 'Brassard, L., Mueller, J., Archer, K. (June 2021). A cross-Canada review of how 21st century competencies are embedded in pre-service teacher education. Multi-paper presentation to be presented at the Canadian Society for the Study of Education in June 2021.'
+    name: 'Leveraging Generative AI for Culturally Responsive Teaching: A Shift in Educator Planning and Practice',
+    description: 'Ewart, K. (2025). Leveraging generative AI for culturally responsive teaching: A shift in educator planning and practice. In Proceedings of SITE 2025 - Society for Information Technology & Teacher Education International Conference (pp. 2030–2035). Association for the Advancement of Computing in Education (AACE). ',
+    reference: 'Read Publication',
+    href: 'images/225764.pdf'
   },
   // Add more publications as needed
 ];

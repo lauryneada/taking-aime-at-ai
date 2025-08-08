@@ -22,8 +22,8 @@ const recommendations = [
         link: 'https://gradescope.com'
     },
     {
-        title: 'Quizziz',
-        description: 'Interactice quix platform that enables gamified learning',
+        title: 'Wayground',
+        description: 'Interactive quiz platform that enables gamified learning',
         color: '#412C88',
         link: 'https://quizizz.com'
     },

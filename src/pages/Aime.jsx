@@ -26,8 +26,8 @@ export default function Aime() {
             </Container>
             <KeyboardDoubleArrowDownIcon sx={{fontSize: '300px', position: 'relative', left: 50, top: 170}}/>
         </Stack>
-        <Container sx={{padding: 3}}>
-            <Typography variant='h2' sx={{textAlign:'center'}}>AIME Framework</Typography>
+        <Container sx={{padding: 5}}>
+            <Typography variant='h2' sx={{textAlign:'center'}} id="framework-section">AIME Framework</Typography>
             <Typography variant='body1' sx={{textAlign:'center'}}>A research-informed and equity-centered model for embedding AI literacy in teacher education at Wilfrid Laurier University and beyond</Typography>
             <Framework />
         </Container>

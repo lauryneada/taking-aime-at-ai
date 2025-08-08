@@ -3,6 +3,7 @@ import {Container , Typography, Box, Button, IconButton, Stack} from "@mui/mater
 import {useNavigate} from 'react-router-dom';
 import '../index.scss';
 import Testimonials from '../components/TestimonialsCarousel';
+import { CardMedia } from "@mui/material";
 
 export default function Home() {
     const navigate = useNavigate();
@@ -24,7 +25,7 @@ export default function Home() {
         <>
         <Container maxWidth={false} disableGutters sx={{
             backgroundColor: 'purple.main',
-            minHeight: '690px',
+            minHeight: '1000px',
             width: '100vw',
             display: 'flex',
             flexDirection: 'column',
@@ -65,6 +66,24 @@ export default function Home() {
                     <Typography variant='h3' sx={{ color: 'white', whiteSpace: 'nowrap' }}>
                         INTEGRATING ARTIFICIAL INTELLIGENCE IN TEACHER EDUCATION
                     </Typography>
+                </Box>
+            </Box>
+            <Box sx={{ mt: 10, mb: 2, width: '100%', display: 'flex', justifyContent: 'center' }}>
+                <Box sx={{ width: { xs: '100%', sm: '80%', md: '60%', lg: '50%' }, boxShadow: 3, borderRadius: 2, overflow: 'hidden' }}>
+                    <CardMedia
+                        sx={{ width: '100%', aspectRatio: '16/9', backgroundColor: 'black' }}
+                    >
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/3ZXjOaw_01M?si=G3m3U3Iq77e_27R3&autoplay=1" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>  
+                        </iframe>
+                    </CardMedia>
                 </Box>
             </Box>
         </Container>
@@ -117,7 +136,7 @@ export default function Home() {
             <Typography variant='h2'>Impact</Typography>
             <Stack direction='row' sx={{margin: 0}}>
                 <Box sx={{position: 'relative', left: '-100px'}}>
-                    <img className="impact-pic" src="images/impact_picture.jpg"></img>
+                    <img className="impact-pic" src="images/impact_picture.png"></img>
                 </Box>
                 <Stack spacing={8} >
                     <Box sx={{ background: 'linear-gradient(60deg, #9c5ac8, #ffe2ea)', position:'relative', right: '-150px', padding: 2, borderRadius: '20px', width:'900px'}}>
@@ -149,7 +168,6 @@ export default function Home() {
         <Container sx={{paddingRight: 10, paddingLeft:10, paddingBottom:12, paddingTop: 5}}>
            <Testimonials />
         </Container>
-
         </>
     );
 }

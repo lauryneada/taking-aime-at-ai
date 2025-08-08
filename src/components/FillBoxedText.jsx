@@ -23,7 +23,7 @@ function FilledBoxedText(props) {
                 <Typography
                     variant="body2"
                     sx={{
-                        color: 'white',
+                        color: props.fontColor || 'white',
                         fontWeight: 900,
                         lineHeight: 1.2,
                     }}
@@ -33,7 +33,7 @@ function FilledBoxedText(props) {
                 <Typography
                     variant="subtitle1"
                     sx={{
-                        color: 'white',
+                        color: props.fontColor || 'white',
                         fontWeight: 400,
                         lineHeight: 1.2,
                     }}
@@ -41,21 +41,25 @@ function FilledBoxedText(props) {
                     {props.description}
                 </Typography>
             </Box>
-            <IconButton
-                sx={{
-                    color: 'white',
-                    fontSize: 40,
-                    p: 2,
-                    '&:hover': {
-                        transform: 'scale(1.2)',
-                        background: 'none', // Remove background on hover
-                    },
-                }}
-                href={props.link}
-                target="_blank"
-            >
-                <OpenInNewIcon sx={{ fontSize: 35 }} />
-            </IconButton>
+            { 
+                props.link &&
+                <IconButton
+                    sx={{
+                        color: 'white',
+                        fontSize: 40,
+                        p: 2,
+                        '&:hover': {
+                            transform: 'scale(1.2)',
+                            background: 'none', // Remove background on hover
+                        },
+                    }}
+                    href={props.link}
+                    target="_blank"
+                >
+                    <OpenInNewIcon sx={{ fontSize: 35 }} />
+                </IconButton>
+            }
+            
         </Box>
     );
 }
