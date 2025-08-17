@@ -25,14 +25,14 @@ function Testimonials() {
 
     return (
         <Box display="flex" alignItems="center" justifyContent="center">
-            <IconButton onClick={handlePrev} sx={{paddingRight: 2}}>
+            <IconButton onClick={handlePrev} sx={{paddingRight: 1}}>
                 <ArrowBackIosNewIcon fontSize='large' sx={{color: 'purple.main'}}/>
             </IconButton>
             <Box 
                 sx={{ 
-                    width: '1000px', 
-                    height: '275px' ,
-                    padding: 5, 
+                    width: { md: '1000px'}, 
+                    height: {xs: '600px', sm: '500px', md: '400px', lg: '275px'} ,
+                    padding: {xs: 3, sm: 3, md: 2, lg: 5}, 
                     border: '4px solid #412C88', 
                     borderRadius: '20px', 
                     display: 'flex', 
@@ -46,7 +46,7 @@ function Testimonials() {
                 {items[index].name ?
                  <Typography variant='body1' sx={{fontSize: 16, textAlign: 'center'}}>-{items[index].name}</Typography> : null}
             </Box>
-            <IconButton onClick={handleNext} sx={{paddingLeft: 2}}>
+            <IconButton onClick={handleNext} sx={{paddingLeft: 1}}>
                 <ArrowForwardIosIcon fontSize='large' sx={{color: 'purple.main'}}/>
             </IconButton>
         </Box>

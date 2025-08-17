@@ -4,7 +4,7 @@
         name: "Dr. Jennifer Straub, Associate Dean, Bachelor of Education - Wilfrid Laurier University",
     },
     { 
-        desc: "The AIME framework designed by Dr. Keri Ewart and Dr. Julie Mueller aligns with the Connectivist Learning Theory (Siemens, 2004; Downes, 2008) and has helped me think beyond technical design and into ethical design. The 'I' component in particular: Inclusive and culturally responsive integration of AI, has challenged me to consider how in my AI use and implementation in my own practice, I may unintentionally reinforce exclusion through my prompting and my selection of AI tools. Rather, this framework has helped me to consider my own critical design and use of AI from a culturally responsive lens.",
+        desc: "The AIME framework aligns with the Connectivist Learning Theory (Siemens, 2004; Downes, 2008) and has helped me think beyond technical design and into ethical design. The 'I' component in particular: Inclusive and culturally responsive integration of AI, has challenged me to consider how in my AI use, I may unintentionally reinforce exclusion through my prompting and my selection of AI tools. Rather, this framework has helped me to consider my own use of AI from a culturally responsive lens.",
         name: "Fei Song, Master of Educational Technology candidate - University of British Columbia",
     },
     { 
@@ -16,7 +16,7 @@
         name: "",
     },
     {
-        desc: "AIME speaks directly to what has long been missing in AI conversations (context, culture, and community). In my social foundations course, I now integrate AI literacy alongside discussions of surveillance, data ethics, and Indigenous knowledge systems. My students are learning to design learning opportunities that use AI while question it, situate it, and reshape it. Institutionally, AIME will allow our Faculty to move toward a coherent and decolonial AI integration strategy. It ensures our professional practice aligns with the real, intersectional experiences.",
+        desc: "AIME speaks directly to what has long been missing in AI conversations. In my social foundations course, I now integrate AI literacy alongside discussions of surveillance, data ethics, and Indigenous knowledge systems. My students are learning to design learning opportunities that use AI. Institutionally, AIME will allow our Faculty to move toward a coherent and decolonial AI integration strategy. It ensures our professional practice aligns with the real, intersectional experiences.",
         name: "Sam McCreedy, Lecturer, Social Foundations and Equity in Education, Master of Educational Technology Program - UBC",
     },
     {
