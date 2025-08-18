@@ -34,7 +34,7 @@ function Presentations() {
         <Container maxWidth='xl' sx={{paddingBottom: 6}}>
             <Grid container spacing={4} sx={{ justifyContent: 'center'}}>
                 {workshops_content.map((workshop, index) => (
-                    <Grid item xs={12} sm={6} md={4} key={index}>
+                    <Grid size={{xs: 12, sm: 6, md: 4}} key={index}>
                         <MediaCard {...workshop} />
                     </Grid>
                 ))}

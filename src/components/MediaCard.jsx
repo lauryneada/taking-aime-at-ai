@@ -14,10 +14,10 @@ export default function MediaCard(props) {
         image={props.image}
       />
       <CardContent>
-        <Typography gutterBottom variant="body1" component="div" fontWeight='900' sx={{display: 'flex', textAlign: 'center', textDecoration: 'underline', height:'120px', justifyContent: 'center', alignItems: 'center'}}>
+        <Typography gutterBottom variant="body1" component="div" fontWeight='900' sx={{display: 'flex', textAlign: 'center', textDecoration: 'underline', height:'120px', justifyContent: 'center', alignItems: 'center', fontSize: {xs: 18, sm: 25}}}>
           {props.title}
         </Typography>
-        <Typography variant="body1" fontSize='18px' sx={{textAlign: 'center', height:'120px', display: 'flex', justifyContent: 'center', alignItems: 'center', padding:1}}>
+        <Typography variant="body1" sx={{textAlign: 'center', height:'120px', display: 'flex', justifyContent: 'center', alignItems: 'center', padding:1, fontSize: {xs: 16, sm: 18}}}>
           {props.description}
         </Typography>
       </CardContent>

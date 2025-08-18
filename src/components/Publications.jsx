@@ -20,10 +20,10 @@ export default function Publications() {
     <Container maxWidth="lg">
       {currentPublications.map((pub, idx) => (
         <Box key={pub.name} sx={{ mb: 4 }}>
-          <Typography variant="body1" fontWeight="bold" gutterBottom>
+          <Typography variant="body1" fontWeight="bold" gutterBottom sx={{fontSize: {xs: 18, sm:26}}}>
             {pub.name}
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: 18, mb: 2 }}>
+          <Typography variant="body1" sx={{ fontSize: {xs: 16, sm: 18}, mb: 2 }}>
             {pub.description}
             <Link href={pub.href} target='_blank' color='primary.main' underline="hover">{pub.reference}</Link>
           </Typography>

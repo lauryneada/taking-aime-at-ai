@@ -10,22 +10,22 @@ export default function CustomTools() {
   };
 
   return (
-    <Box sx={{}}>
+    <Box>
       <Grid container spacing={4} justifyContent="center">
         {tools.map((tool, idx) => (
           <Grid item xs={12} md={10} key={tool.title}>
-            <Card sx={{ display: 'flex', flexDirection: 'row', minHeight: 220, maxWidth: 1200, mx: 'auto', borderRadius: '20px'}}>
+            <Card sx={{ display: 'flex', flexDirection: {xs: 'column', md: 'row'}, alignItems: 'center', minHeight: 220, maxWidth: 1200, mx: 'auto', borderRadius: '20px'}}>
               <CardMedia
                 component="img"
                 image={tool.image}
                 alt={tool.title}
                 sx={{
-                  height: 220,
+                  height: {xs: 'auto', sm: 220},
                   objectFit: 'cover',
                   backgroundColor: '#fff',
                   borderRadius: '20px',
                   m: 2,
-                  width: '35%',
+                  width: {xs: '100%',sm: '80%', md:'35%'},
                   cursor: tool.link ? 'pointer' : 'default',
                   transition: 'transform 0.3s cubic-bezier(.4,2,.6,1)',
                   '&:hover': tool.link ? {

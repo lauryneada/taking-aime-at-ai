@@ -21,11 +21,26 @@ const AntTabs = styled(Tabs)({
 const AntTab = styled((props) => <Tab disableRipple {...props} />)(({ theme }) => ({
   textTransform: 'none',
   minWidth: 0,
+  maxWidth: 150,
+  whiteSpace: 'normal',
+  fontSize: 18,
+  padding: '6px 8px',
   [theme.breakpoints.up('sm')]: {
-    minWidth: 0,
+    fontSize: 18,
+    maxWidth: 150,
+    padding: '8px 12px',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: 18,
+    maxWidth: 200,
+    padding: '10px 16px',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: 22,
+    maxWidth: 300,
+    padding: '12px 20px',
   },
   marginRight: theme.spacing(1),
-  fontSize: 25,
   color: '#412C88',
   '&:hover': {
     color: '#412C88',
@@ -54,37 +69,43 @@ export default function ResourceTabs() {
     setValue(newValue);
   };
 
+  const tabLabels = [
+    "Presentations",
+    "Publications",
+    "Customized AI Tools",
+    "Recommended AI Tools",
+    "AI Tips in Two"
+  ];
+
   return (
     <>
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ bgcolor: '#fff' }}>
-        <AntTabs value={value} onChange={handleChange} centered>
-          <AntTab label="Presentations" />
-          <AntTab label="Publications" />
-          <AntTab label="Customized AI Tools" />
-          <AntTab label="Recommended AI Tools" />
-          <AntTab label="AI Tips in Two" />
-        </AntTabs>
-        <Box sx={{ p: 3 }} />
+      <Box sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        bgcolor: '#fff',
+        '& .MuiTabs-scrollButtons.Mui-disabled': {
+          opacity: 0.3,
+        }
+      }}>
+          <AntTabs
+            value={value}
+            onChange={handleChange}
+            variant="scrollable"
+            scrollButtons
+            allowScrollButtonsMobile
+          >
+            {tabLabels.map(label => (
+              <AntTab key={label} label={label} />
+            ))}
+          </AntTabs>
       </Box>
-    </Box>
-    <Box sx={{ p: 3 }}>
-        {value === 0 && (
-            <Presentations />
-        )}
-        {value === 1 && (
-            <Publications />
-        )}
-        {value === 2 && (
-            <CustomTools />
-        )}
-        {value === 3 && (
-            <Recommendations />
-        )}
-        {value === 4 && (
-            <VideoTutorials/>
-        )}
-    </Box>
+      <Box sx={{ p: 3 }}>
+        {value === 0 && <Presentations />}
+        {value === 1 && <Publications />}
+        {value === 2 && <CustomTools />}
+        {value === 3 && <Recommendations />}
+        {value === 4 && <VideoTutorials />}
+      </Box>
     </>
   );
 }

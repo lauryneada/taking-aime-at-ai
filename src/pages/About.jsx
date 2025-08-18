@@ -34,17 +34,17 @@ function About() {
 
     return (
         <>
-        <Container maxWidth='lg' sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 20, gap: 3, textAlign: 'center', paddingBottom: 10}}>
-            <Typography variant='h2'>Project Description</Typography>
-            <Typography variant='body1'>AI’s rapid rise demanded attention in teacher education.</Typography>
-            <Typography variant='body1' sx={{fontWeight: 'bold'}}>But how do we prepare future educators ethically?</Typography>
-            <Typography variant='body1'>This project, Taking AIME at AI: Integrating AI in Teacher Education, introduces the AIME framework, a research-informed and equity-centered model for embedding AI literacy in teacher education at Wilfrid Laurier University and beyond.</Typography>
+        <Container maxWidth='lg' sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: {sm: 20, xs: 5}, gap: 3, textAlign: 'center', paddingBottom: 10}}>
+            <Typography variant='h2' sx={{fontSize: {lg: 60, sm: 36, xs: 28}}}>Project Description</Typography>
+            <Typography variant='body1' sx={{fontSize: {lg: 25, sm: 20, xs: 18}}}>AI’s rapid rise demanded attention in teacher education.</Typography>
+            <Typography variant='body1' sx={{fontWeight: 'bold', fontSize: {lg: 25, sm: 20, xs: 18}}}>But how do we prepare future educators ethically?</Typography>
+            <Typography variant='body1'  sx={{fontSize: {lg: 25, sm: 20, xs: 18}}}>This project, Taking AIME at AI: Integrating AI in Teacher Education, introduces the AIME framework, a research-informed and equity-centered model for embedding AI literacy in teacher education at Wilfrid Laurier University and beyond.</Typography>
         </Container>
-        <Container maxWidth='lg' sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 20, gap: 3, textAlign: 'center'}}>
-            <Typography variant='h2' color='#9c5ac8'>Laurier’s AI Use Case</Typography>
-            <Typography variant='body1' color='#9c5ac8'>We joined Canada 21 and Dell to explore this question through a national Use Case initiative.​</Typography>
-            <Typography variant='body1' color='#9c5ac8'>At the heart of Laurier’s AI Use Case is a commitment to embedding AI literacy and ethical practice into teacher education in a way that aligns with the Faculty of Education’s values: <b>social justice</b>, <b>inclusion</b>, <b>critical inquiry</b>, <b>community partnership</b>, <br /> and <b>pedagogical integrity</b>. </Typography>
-            <Stack direction='row' spacing={2} sx={{justifyContent: 'center', padding: 3}}>
+        <Container maxWidth='lg' sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: {xl: 20, xs: 5}, gap: 3, textAlign: 'center'}}>
+            <Typography variant='h2' color='#9c5ac8' sx={{fontSize: {lg: 60, sm: 36, xs: 28}}}>Laurier’s AI Use Case</Typography>
+            <Typography variant='body1' color='#9c5ac8' sx={{fontSize: {lg: 25, sm: 20, xs: 18}}}>We joined Canada 21 and Dell to explore this question through a national Use Case initiative.​</Typography>
+            <Typography variant='body1' color='#9c5ac8' sx={{fontSize: {lg: 25, sm: 20, xs: 18}}}>At the heart of Laurier’s AI Use Case is a commitment to embedding AI literacy and ethical practice into teacher education in a way that aligns with the Faculty of Education’s values: <b>social justice</b>, <b>inclusion</b>, <b>critical inquiry</b>, <b>community partnership</b>, <br /> and <b>pedagogical integrity</b>. </Typography>
+            <Stack spacing={2} direction={{xs: 'column', sm: 'row'}} sx={{justifyContent: 'center', padding: 3}}>
                 <Button 
                     variant='contained' 
                     size='large' 
@@ -80,9 +80,9 @@ function About() {
             </Stack>
             
         </Container>
-        <Container maxWidth='xl' sx={{padding: 20, textAlign: 'center'}}>
-            <Typography variant='h2'>The Team</Typography>
-            <Stack direction='row' spacing={40} sx={{justifyContent:'center', padding: 10}}>
+        <Container maxWidth='xl' sx={{padding: {xl: 20, xs: 5}, textAlign: 'center', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
+            <Typography variant='h2' sx={{fontSize: {xl: 60, md: 36, xs: 28}}}>The Team</Typography>
+            <Stack direction={{xs: 'column', md: 'row'}} spacing={{xs: 10, sm: 20, md: 30, lg: 40}} sx={{display: 'flex',alignItems:'center', padding: 10}}>
                 <Box>
                     <Box
                         size='md'
