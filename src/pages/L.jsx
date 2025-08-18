@@ -15,11 +15,11 @@ const bullets=[
 export default function A() {
 
   return (
-    <Box>
-      <Container sx={{padding: 5}}>
-        <Typography variant='h2' sx={{textAlign:'center', color:'#9c5ac8'}}>Learner-Driven AI Education</Typography>
+    <Box sx={{minHeight: {xl:'1055px', lg: 'auto'}}}>
+      <Container sx={{padding: {xs:2, sm:5}, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <Typography variant='h2' sx={{textAlign:'center', color:'#9c5ac8', fontSize: {xs:36, sm:60}}}>Learner-Driven AI Education</Typography>
         <Typography variant='body1' sx={{mt: 2, textAlign: 'center', color:'black'}}>The newly designed AIME framework is distinct from existing AI education models because it: </Typography>
-          <Stack gap={5} sx={{mt:5}}>
+          <Stack gap={5} sx={{mt: {xs: 5, sm: 10}}}>
               {bullets.map(bullet => (
                   <FilledBoxedText 
                       description={bullet}
@@ -33,7 +33,7 @@ export default function A() {
         position: 'sticky',
         bottom: 32,
         left: 32,
-        margin: '5px',
+        margin: '20px',
         display: 'flex',
         alignItems: 'center',
         zIndex: 1000

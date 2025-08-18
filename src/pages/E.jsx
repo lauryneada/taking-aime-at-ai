@@ -12,10 +12,10 @@ const bullets=[
 export default function E() {
 
   return (
-    <Box>
-      <Container sx={{height:'700px', padding: 5}}>
-        <Typography variant='h2' sx={{textAlign:'center', color:'#FF9900'}}>Experiential, Ethical, & Evolving AI Practices</Typography>
-          <Stack gap={5} sx={{mt:5}}>
+    <Box sx={{minHeight: {xl:'1055px', lg: 'auto'}}}>
+      <Container sx={{padding: {xs:2, sm:5}, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <Typography variant='h2' sx={{textAlign:'center', color:'#FF9900', fontSize: {xs:36, sm:60}}}>Experiential, Ethical, & Evolving AI Practices</Typography>
+          <Stack gap={5} sx={{mt: {xs: 5, sm: 10}}}>
                 {bullets.map((bullet,index) => (
                     <FilledBoxedText 
                         key={index}
@@ -30,7 +30,7 @@ export default function E() {
         position: 'sticky',
         bottom: 32,
         left: 32,
-        margin: '5px',
+        margin: '20px',
         display: 'flex',
         alignItems: 'center',
         zIndex: 1000

@@ -7,36 +7,26 @@ import BoxedText from "../components/BoxedText";
 export default function Aime() {
     return (
         <>
-        <Stack direction='row' sx={{padding: 10}}>
+        <Stack direction='row' sx={{padding: {xs: 4, md: 15} }}>
             <Container maxWidth='lg' sx={{display: 'flex', flexDirection: 'column',justifyContent: 'start', gap: 3}}>
-                <Stack direction="row" alignItems="flex-start" spacing={2}>
-                    <Stack spacing={0.5} alignItems="center" justifyContent="center">
-                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0} sx={{minWidth: '1.2em', textAlign: 'center'}}><span style={{color: ' #DB6463'}}>A</span></Typography>
-                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0} sx={{minWidth: '1.2em', textAlign: 'center'}}><span style={{color: '#4284F3'}}>I</span></Typography>
-                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0} sx={{minWidth: '1.2em', textAlign: 'center'}}><span style={{color: '#6dd040'}}>M</span></Typography>
-                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0} sx={{minWidth: '1.2em', textAlign: 'center'}}><span style={{color: '#FF9900'}}>E</span></Typography>
-                    </Stack>
-                    <Stack spacing={0.5}>
-                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0}>daptive</Typography>
-                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0}>nclusive</Typography>
-                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0}>ulti-literacy</Typography>
-                        <Typography variant='h2' fontSize={75} color='purple.main' margin={0}>thical learner-driven AI in teacher education</Typography>
-                    </Stack>
-                </Stack>
+                <Typography variant='h2' color='purple.main' margin={0} sx={{fontSize:{xs: 36, sm: 60, xl: 75}}}><span style={{color: ' #DB6463'}}>A</span>daptive</Typography>
+                <Typography variant='h2' color='purple.main' margin={0} sx={{fontSize:{xs: 36, sm: 60, xl: 75}}}><span style={{color: '#4284F3'}}>I</span>nclusive</Typography>
+                <Typography variant='h2' color='purple.main' margin={0} sx={{fontSize:{xs: 36, sm: 60, xl: 75}}}><span style={{color: '#6dd040'}}>M</span>ulti-literacy</Typography>
+                <Typography variant='h2' color='purple.main' margin={0} sx={{fontSize:{xs: 36, sm: 60, xl: 75}}}><span style={{color: '#FF9900'}}>E</span>thical learner-driven AI in teacher education</Typography>
             </Container>
-            <KeyboardDoubleArrowDownIcon sx={{fontSize: '300px', position: 'relative', left: 50, top: 170}}/>
+            <KeyboardDoubleArrowDownIcon sx={{fontSize: {xl: '300px', sm: '200px', xs: '100px'}, position: 'relative', left: {xs: 25, md: 50}, top: 170}}/>
         </Stack>
-        <Container sx={{padding: 5}}>
-            <Typography variant='h2' sx={{textAlign:'center'}} id="framework-section">AIME Framework</Typography>
-            <Typography variant='body1' sx={{textAlign:'center'}}>A research-informed and equity-centered model for embedding AI literacy in teacher education at Wilfrid Laurier University and beyond</Typography>
+        <Container sx={{padding: 3}}>
+            <Typography variant='h2' sx={{textAlign:'center', fontSize: {xs: 28, md: 60}}}>AIME Framework</Typography>
+            <Typography variant='body1' sx={{textAlign:'center', fontSize: {xs: 18, md: 25}}}>A research-informed and equity-centered model for embedding AI literacy in teacher education at Wilfrid Laurier University and beyond</Typography>
             <Framework />
         </Container>
-        <Container maxWidth='lg' sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, padding: 20, paddingTop: 0}}>
-            <Typography variant='h2' sx={{textAlign: 'center'}}>Three-Phase Implementation Model</Typography>
+        <Container maxWidth='lg' sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, padding: {xs: 5, sm: 20}, paddingTop: 0}}>
+            <Typography variant='h2' sx={{textAlign: 'center', fontSize:{xs:28, md: 60}}}>Three-Phase Implementation Model</Typography>
             <BoxedText 
                 text={[<span style={{fontWeight: 700}}>Phase 1</span>, " Awareness and Professional Learning"]}
                 hover={true}
-                link='/resource-centre'
+                link='/resource-center'
                 more={[
                     'Develop foundational workshops, training modules, and interdisciplinary AI literacy courses tailored for BEd students and faculty.',
                     'Offer professional development sessions on AI’s role in education, ethics, and equity.',
@@ -68,5 +58,6 @@ export default function Aime() {
             />
         </Container>
         </>
+        
     );
 }

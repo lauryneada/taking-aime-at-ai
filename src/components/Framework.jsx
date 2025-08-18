@@ -1,28 +1,33 @@
 import React, { useState } from "react";
 import { Container, Typography, Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { useMediaQuery } from "@mui/material";
 
 const frameworkData = [
     {
         label: "Adaptive & Personalized Learning",
+        labelsmall: "A",
         color: "#DB6463",
         desc: "Centers UDL, accessibility, and learner-driven AI tools to support differentiated instruction and feedback.",
         link: "/a"
     },
     {
         label: "Inclusive & Culturally Responsive AI",
+        labelsmall: "I",
         color: "#4284F3",
         desc: "Embeds culturally sustaining pedagogies and anti-bias approaches, co-designed with historically marginalized communities.",
         link: "/i"
     },
     {
         label: "Experiential, Ethical, & Evolving AI Practices",
+        labelsmall: "M",
         color: "#FF9900",
         desc: "Supports hands-on learning, ethical reasoning, and iterative professional growth.",
         link: "/e"
     },
     {
         label: "Multiple & Critical AI Literacies",
+        labelsmall: "E",
         color: "#6dd040",
         desc: "Prepares teacher candidates to critically understand, teach, and evaluate AI in educational settings.",
         link: "/m"
@@ -39,32 +44,33 @@ const positions = [
 ];
 
 export default function Framework() {
+    const isCompact = useMediaQuery('(max-width:600px)');
     const [hoverRect, setHoverRect] = useState(null);
     const [hoverCirc, setHoverCirc] = useState(null);
     const navigate = useNavigate();
 
     return (
-        <Container maxWidth="md" sx={{ minHeight: 600, position: 'relative', py: 10}}>
-            <Box sx={{ position: 'relative', width: 600, height: 400, mx: 'auto' }}>
+        <Container sx={{ height: {xs: 500, md: 600}, position: 'relative', py: 10}}>
+            <Box sx={{ position: 'relative', width: {xs: 200, sm: 400, md: 600}, height: 400, mx: 'auto' }}>
                 {/* Center Circle */}
                 <Box
-                    onMouseEnter={() => setHoverCirc(true)}
-                    onMouseLeave={() => setHoverCirc(false)}
+                    onMouseEnter={() => isCompact ? setHoverCirc(false) : setHoverCirc(true)}
+                    onMouseLeave={() => isCompact ? setHoverCirc(false) : setHoverCirc(false)}
                     sx={{
                         position: 'absolute',
                         top: '50%',
                         left: '50%',
                         transition: 'transform 0.2s, box-shadow 0.2s, width 0.2s, height 0.2s',
                         transform: `translate(-50%, -50%) ${hoverCirc ? 'scale(1.08)' : ''}`,
-                        width: hoverCirc ? 315 : 250,
-                        height: hoverCirc ? 315 : 250,
+                        width: isCompact ? 150 : (hoverCirc ? 315 : 250),
+                        height: isCompact ? 150 : (hoverCirc ? 315 : 250),
                         bgcolor: '#9c5ac8',
                         borderRadius: '50%',
                         boxShadow: 3,
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        zIndex: 2,
+                        zIndex: 3,
                         border: '2px solid black',
                         padding: 2,
                         cursor: 'pointer',
@@ -72,7 +78,7 @@ export default function Framework() {
                     onClick={() => navigate('/l')} // Navigate to learner-driven page
                 >
                     <Box>
-                        <Typography variant="h5" align="center" sx={{ color: 'white', fontWeight: 700 }}>
+                        <Typography variant="h5" align="center" sx={{ fontSize: {xs: 18, sm: 24}, color: 'white', fontWeight: 700 }}>
                         Learner-Driven<br />AI Education
                         </Typography>
                         {hoverCirc && (
@@ -87,7 +93,7 @@ export default function Framework() {
                 {frameworkData.map((item, i) => (
                     <FrameworkRect
                         key={item.label}
-                        label={item.label}
+                        label={isCompact ? item.labelsmall : item.label}
                         color={item.color}
                         desc={item.desc}
                         position={positions[i]}
@@ -95,6 +101,7 @@ export default function Framework() {
                         onHover={() => setHoverRect(i)}
                         onLeave={() => setHoverRect(null)}
                         onClick={() => navigate(item.link)}
+                        isCompact={isCompact}
                     />
                 ))}
             </Box>
@@ -103,7 +110,8 @@ export default function Framework() {
 }
 
 // Rectangle component with hover effect and description
-function FrameworkRect({ label, color, desc, position, hovered, onHover, onLeave, onClick }) {
+function FrameworkRect({ label, color, desc, position, hovered, onHover, onLeave, onClick, isCompact }) {
+    
     return (
         <Box
             onMouseEnter={onHover}
@@ -111,8 +119,8 @@ function FrameworkRect({ label, color, desc, position, hovered, onHover, onLeave
             onClick={onClick}
             sx={{
                 position: 'absolute',
-                width: hovered ? 350 : 300,
-                height: hovered ? 200 : 150,
+                width: isCompact ? 100 : (hovered ? 350 : 300),
+                height: isCompact ? 100 : (hovered ? 200 : 150),
                 padding: 1,
                 bgcolor: color,
                 borderRadius: 3,
@@ -126,7 +134,7 @@ function FrameworkRect({ label, color, desc, position, hovered, onHover, onLeave
                 fontWeight: 700,
                 fontSize: 20,
                 color: 'black',
-                zIndex: 3,
+                zIndex: 2,
                 ...position,
                 transform: `${position.transform} ${hovered ? 'scale(1.08)' : ''}`,
                 textAlign: 'center'

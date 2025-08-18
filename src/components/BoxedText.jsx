@@ -10,32 +10,34 @@ function BoxedText(props) {
         <Box
             sx={{
                 border: '3px solid #A088BF',
-                padding: 2,
+                padding: { xs: 1, md: 2 },
                 borderRadius: '20px',
-                width: '990px',
+                width: { xs: '90vw', sm: '700px', md: '990px' },
+                maxWidth: '100vw',
                 backgroundColor: open ? '#A088BF' : 'white',
                 color: open ? 'white' : 'black',
                 transition: 'background 0.2s, color 0.2s',
                 display: 'flex',
                 alignItems: 'center',
                 cursor: 'pointer',
-                minHeight: '60px',
+                minHeight: { xs: '40px', md: '60px' },
                 position: 'relative',
+                boxSizing: 'border-box',
             }}
         >
             <Box sx={{ flexGrow: 1 }}>
                 <Typography
                     variant='body1'
-                    fontSize='35px'
-                    sx={{ color: open ? 'white' : 'purple.main' }}
+                    fontSize={{ xs: 18, sm: 25, md: 35 }}
+                    sx={{ color: open ? 'white' : 'purple.main', wordBreak: 'break-word' }}
                 >
                     {props.title || props.text}
                 </Typography>
                 <Collapse in={open}>
-                    <Box component="ul" sx={{ mt: 2, color: 'white', fontSize: 22, pl: 3 }}>
+                    <Box component="ul" sx={{ mt: 2, color: 'white', fontSize: { xs: 14, sm: 18, md: 22 }, pl: 3 }}>
                         {props.more.map((item, idx) => (
                             <li key={idx} style={{ marginBottom: 8 }}>
-                                <Typography variant='body2' component="span" sx={{ color: 'white', fontSize: 22 }}>
+                                <Typography variant='body2' component="span" sx={{ color: 'white', fontSize: { xs: 14, sm: 18, md: 22 } }}>
                                     {item}
                                 </Typography>
                             </li>

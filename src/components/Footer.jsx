@@ -9,7 +9,7 @@ function Footer() {
     const isCompact = useMediaQuery('(max-width:900px)');
 
     return (
-        <Container maxWidth={false} disableGutters sx={{ backgroundColor: 'purple.main', padding: 3, width: '100vw' }}>
+        <Container maxWidth={false} disableGutters sx={{ backgroundColor: 'purple.main', padding: 3, width: '100%' }}>
             {isCompact ? (
                 <Stack spacing={4} sx={{ alignItems: 'center', width: '100%' }}>
                     <Box sx={{ width: '90%', display: 'flex', justifyContent: 'center' }}>
