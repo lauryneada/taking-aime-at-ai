@@ -31,7 +31,7 @@ function Testimonials() {
             <Box 
                 sx={{ 
                     width: { md: '1000px'}, 
-                    height: {xs: '600px', sm: '500px', md: '400px', lg: '275px'} ,
+                    height: {xs: '500px', sm: '500px', md: '400px', lg: '275px'} ,
                     padding: {xs: 3, sm: 3, md: 2, lg: 5}, 
                     border: '4px solid #412C88', 
                     borderRadius: '20px', 
@@ -42,9 +42,9 @@ function Testimonials() {
                     justifyContent: 'center'
                 }}
             >
-                <Typography variant='body1' sx={{fontSize: 18, textAlign: 'center'}}>"{items[index].desc}"</Typography>
+                <Typography variant='body1' sx={{fontSize: { xs: 14, sm: 16, md: 18 }, textAlign: 'center'}}>"{items[index].desc}"</Typography>
                 {items[index].name ?
-                 <Typography variant='body1' sx={{fontSize: 16, textAlign: 'center'}}>-{items[index].name}</Typography> : null}
+                 <Typography variant='body1' sx={{fontSize: { xs: 14, sm: 16, md: 18 }, textAlign: 'center'}}>-{items[index].name}</Typography> : null}
             </Box>
             <IconButton onClick={handleNext} sx={{paddingLeft: 1}}>
                 <ArrowForwardIosIcon fontSize='large' sx={{color: 'purple.main'}}/>
